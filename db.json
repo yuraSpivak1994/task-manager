@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "email": "junior.lokti@gmail.com",
+      "password": "12121221",
+      "name": "Yura Spivak",
+      "id": 2
+    },
+    {
+      "email": "admin11@gmail.com.ua",
+      "password": "1111111",
+      "name": "Yura Spivak22",
+      "id": 3
+    },
+    {
+      "email": "junior.lzokti@gmail.com",
+      "password": "ZXZXZXSX",
+      "name": "Yura Spivak22",
+      "id": 4
+    },
+    {
+      "email": "juniaor.lokti@gmail.com",
+      "password": "12121221",
+      "name": "asasas",
+      "id": 5
+    },
+    {
+      "email": "olegius2296@gmail.com",
+      "password": "111111",
+      "name": "Oleg",
+      "id": 6
+    },
+    {
+      "email": "olenaklepach17@gmail.com",
+      "password": "1111111",
+      "name": "Olena",
+      "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "email": "junior.lokti@gmail.com",
+      "title": "Example title",
+      "description": "Ukraine borders on Russia, Belarus, Poland, Moldova, Slovakia, Hungary, and Romania. It’s washed by the Black Sea and the Sea of Azov and has very important ",
+      "id": 2
+    },
+    {
+      "email": "juni22or.lokti@gmail.com",
+      "title": "Example title",
+      "description": "Ukraine borders on Russia, Belarus, Poland, Moldova, Slovakia, Hungary, and Romania. It’s washed by the Black Sea and the Sea of Azov and has very important ports. Ukraine is larger than France and Great Britain but considerably smaller t.",
+      "id": 6
+    },
+    {
+      "email": "juniror.lokti@gmail.com",
+      "title": "Сходити в магаз",
+      "description": "купити хліба купити хлібакупити хлібакупити хлібакуп хлібакупи ти хліба м купити хліба м купити хліба м купити хліба",
+      "id": 9
+    },
+    {
+      "email": "junior.lokfffti@gmail.com",
+      "title": "1dasdadsasd",
+      "description": "asdasdasd",
+      "id": 10
+    },
+    {
+      "email": "junior.lokti@gmail.com",
+      "title": "sdfZXsxdsf",
+      "description": "adasdasd",
+      "id": 11
+    },
+    {
+      "email": "sadasdasdasdasd@sadsd",
+      "title": "dasdad",
+      "description": "dasdasdsad",
+      "id": 12
+    },
+    {
+      "email": "junior.lokti@gmail.com",
+      "title": "asdasdasdasd",
+      "description": "asdasdad",
+      "id": 13
+    }
+  ]
+}

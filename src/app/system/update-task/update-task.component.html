@@ -1,0 +1,87 @@
+<section class="tasks-container">
+  <div class="card  col-xs-3 ">
+    <div class="card-body">
+      <p class="text-xs-center"> Update task</p>
+      <form  *ngFor="let updateTask of task" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div
+          class="form-group"
+          [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched}"
+        >
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="form-control underlined"
+            id="email"
+            placeholder="Enter email"
+            formControlName="email"
+            [ngModel]="updateTask.email"
+          >
+          <span
+            class="form-help-text"
+            *ngIf="form.get('email').invalid && form.get('email').touched"
+          >
+      <span *ngIf="form.get('email')['errors']['required']">Email cannot be empty</span>
+      <span *ngIf="form.get('email')['errors']['email']">Enter correct email </span>
+      <span *ngIf="form.get('email')['errors']['forbiddenEmail']">Email reserved </span>
+    </span>
+        </div>
+        <div
+          class="form-group"
+          [ngClass]="{'has-error': form.get('title').invalid && form.get('title').touched}"
+        >
+          <label for="password">Title</label>
+          <input
+            type="text"
+            class="form-control underlined"
+            id="password"
+            placeholder="Enter title"
+            formControlName="title"
+            [ngModel]="updateTask.title"
+          >
+          <span
+            class="form-help-text"
+            *ngIf="form.get('title').invalid && form.get('title').touched"
+          >
+      <span *ngIf="form.get('title')['errors']['required']">title cannot be empty</span>
+      <span *ngIf="form.get('title')['errors']['minlength']">
+        min length
+        {{form.get('title')['errors']['minlength']['requiredLength']}}
+        characters.
+          Now {{form.get('title')['errors']['minlength']['actualLength']}}
+      </span>
+    </span>
+        </div>
+        <div
+          class="form-group"
+          [ngClass]="{'has-error': form.get('description').invalid && form.get('description').touched}"
+        >
+          <label for="name">Description</label>
+          <textarea
+            type="text"
+            class="form-control underlined"
+            id="name"
+            placeholder="Enter description"
+            formControlName="description"
+            [ngModel]="updateTask.description"
+          >
+            </textarea>
+          <span
+            class="form-help-text"
+            *ngIf="form.get('description').invalid && form.get('description').touched"
+          >
+      <span *ngIf="form.get('description')['errors']['required']">description cannot be empty</span>
+    </span>
+        </div>
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-block btn-primary"
+            [disabled]="form.invalid"
+          >
+            Update</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>

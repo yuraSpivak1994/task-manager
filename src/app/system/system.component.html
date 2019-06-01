@@ -1,0 +1,13 @@
+<header class="header-block">
+  <nav class="nav-block">
+    <span class="item" routerLinkActive="active" [routerLink]="['/system//tasks']">Home</span>
+    <span class="item" routerLinkActive="active" [routerLink]="['/system/task']">Create task</span>
+  </nav>
+  <div class="log_out-block">
+  <span class="name">
+   {{user.name}}
+  </span>
+    <button type="button" class="btn btn-primary" (click)="logOut()">Log out</button>
+  </div>
+</header>
+<router-outlet></router-outlet>

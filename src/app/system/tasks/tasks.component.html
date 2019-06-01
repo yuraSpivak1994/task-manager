@@ -1,0 +1,11 @@
+<section class="tasks-container">
+  <div *ngFor="let task of tasks" class="card  col-xs-3 ">
+    <a class="close" data-toggle="tooltip" data-placement="top" title="delete" (click)="deleteTask(task.id)">×</a>
+    <div class="card-body">
+      <h5 class="card-title">{{task.title}}</h5>
+      <p class="card-text">{{task.description}}</p>
+      <p class="card-text">{{task.email}}</p>
+      <span class="btn btn-primary" [routerLink]="['/system/update', task.id]">Update</span>
+    </div>
+  </div>
+</section>
