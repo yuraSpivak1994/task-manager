@@ -21,22 +21,9 @@ export class CreateTaskComponent implements OnInit {
 
   ngOnInit() {
     this.form = new FormGroup({
-      email: new FormControl(null, [Validators.required, Validators.email], this.forbiddenEmails.bind(this)),
+      email: new FormControl(null, [Validators.required, Validators.email]),
       title: new FormControl(null, [Validators.required, Validators.minLength(6)]),
       description: new FormControl(null, [Validators.required, Validators.minLength(6)]),
-    });
-  }
-
-  forbiddenEmails(control: FormControl): Promise<any> {
-    return  new Promise((resolve) => {
-      this.systemService.getTaskByEmail(control.value)
-        .subscribe((user: User) => {
-          if (user) {
-            resolve({forbiddenEmail: true});
-          } else {
-            resolve(null);
-          }
-        });
     });
   }
 
