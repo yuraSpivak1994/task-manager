@@ -3,7 +3,10 @@
     <span class="item" routerLinkActive="active" [routerLink]="['/system//tasks']">Home</span>
     <span class="item" routerLinkActive="active" [routerLink]="['/system/task']">Create task</span>
   </nav>
-  <div class="log_out-block">
+  <div class="log_out-block" appDropdpwn>
+    <div class="drop-hide drop-open">
+      <b>dropdown work</b>
+    </div>
   <span class="name">
    {{user.name}}
   </span>

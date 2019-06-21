@@ -6,7 +6,7 @@ import { CreateTaskComponent } from './create-task/create-task.component';
 import { UpdateTaskComponent } from './update-task/update-task.component';
 
 const routes: Routes = [
-  {path: 'system', component: SystemComponent, children: [
+  {path: '', component: SystemComponent, children: [
       {path: 'tasks', component: TasksComponent},
       {path: 'task', component: CreateTaskComponent},
       {path: 'update/:id', component: UpdateTaskComponent}

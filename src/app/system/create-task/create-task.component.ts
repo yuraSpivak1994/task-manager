@@ -32,7 +32,7 @@ export class CreateTaskComponent implements OnInit {
     const task = new Tasks(email, title, description);
     this.systemService.createNewTask(task)
       .subscribe(() => {
-        this.router.navigate(['/tasks']);
+        this.router.navigate(['system/tasks']);
       });
   }
 }

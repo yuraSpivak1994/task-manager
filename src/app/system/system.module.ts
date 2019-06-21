@@ -6,6 +6,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { SystemComponent } from './system.component';
 import { UpdateTaskComponent } from './update-task/update-task.component';
+import { DropdownDirective } from '../shared/directives/dropdown.directive';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { UpdateTaskComponent } from './update-task/update-task.component';
     SharedModule,
     SystemRoutingModule
   ],
-  declarations: [TasksComponent, CreateTaskComponent, SystemComponent, UpdateTaskComponent]
+  declarations: [TasksComponent, CreateTaskComponent, SystemComponent, UpdateTaskComponent, DropdownDirective]
 })
 export class SystemModule {
 

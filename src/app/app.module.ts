@@ -9,7 +9,6 @@ import { UsersService } from './shared/services/users.service';
 // tslint:disable-next-line:import-blacklist
 import 'rxjs/Rx';
 import { AuthService } from './shared/auth.service';
-import { SystemModule } from './system/system.module';
 import { SystemService } from './shared/services/system.servise';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { SystemService } from './shared/services/system.servise';
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    SystemModule,
     HttpClientModule
   ],
   providers: [UsersService, AuthService, SystemService],

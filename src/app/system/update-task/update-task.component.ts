@@ -34,7 +34,7 @@ export class UpdateTaskComponent implements OnInit, OnDestroy {
     const task = new Tasks(email, title, description);
     this.systemService.updateTask(this.id, task)
      .subscribe(( ) => {
-       this.router.navigate(['tasks']);
+       this.router.navigate(['system/tasks']);
      });
   }
 
